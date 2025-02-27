@@ -7,6 +7,14 @@ It creates the following resources:
 * `hpa-demo-service` Service
 * `hpa-demo` HorizontalPodAutoscaler with minReplicas=5, maxReplicas=40 and targetCPUUtilizationPercentage=70
 
+To create a cluster, run
+```
+gcloud beta container clusters \
+create-auto hpa-demo --region us-central1 \
+--cluster-version "1.32.1-gke.1729000"
+--release-channel "rapid" \
+--hpa-profile performance
+```
 
 To deploy, run
 ```
