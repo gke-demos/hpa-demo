@@ -11,7 +11,7 @@ To create a cluster, run
 ```
 gcloud beta container clusters \
 create-auto hpa-demo --region us-central1 \
---cluster-version "1.32.1-gke.1729000"
+--cluster-version "1.32.1-gke.1729000" \
 --release-channel "rapid" \
 --hpa-profile performance
 ```
