@@ -6,7 +6,7 @@ spec:
  selector:
    matchLabels:
      run: hpa-demo-app
- replicas: 1
+ replicas: 5
  template:
    metadata:
      labels:
