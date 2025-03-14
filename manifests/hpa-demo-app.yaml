@@ -14,7 +14,7 @@ spec:
    spec:
      containers:
      - name: hpa-demo-app
-       image: k8s.gcr.io/hpa-example
+       image: us-docker.pkg.dev/gke-demos-345619/gke-demos/hpa-demo:latest
        ports:
        - containerPort: 80
 ---
