@@ -20,6 +20,10 @@ spec:
             cpu: 100m
             ephemeral-storage: 1Gi
             memory: 512Mi
+          limits:
+            cpu: 100m
+            ephemeral-storage: 1Gi
+            memory: 512Mi
        ports:
        - containerPort: 8080
 ---
