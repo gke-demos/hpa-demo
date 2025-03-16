@@ -53,7 +53,7 @@ func compute(w http.ResponseWriter, req *http.Request){
 		*/
 		x := 0.
 		rnd := rand.Intn(1000)
-		for i := 0; i <= 1_000_000*rnd; i++ {
+		for i := 0; i <= 10_000*rnd; i++ {
 			x += math.Sqrt(float64(i))
 		}
 	}
