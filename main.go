@@ -9,6 +9,7 @@ import (
 	"fmt"
 	"log"
 	"math"
+	"math/rand"
 	"net/http"
 	"os"
 	"strings"
@@ -50,9 +51,10 @@ func compute(w http.ResponseWriter, req *http.Request){
 		/*
 		Similar to code used for https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough
 		*/
-		x := 0.0001
-		for i := 0; i <= 1000000; i++ {
-			x += math.Sqrt(x)
+		x := 0.
+		rnd := rand.Intn(1000)
+		for i := 0; i <= 1_000_000*rnd; i++ {
+			x += math.Sqrt(float64(i))
 		}
 	}
 	
